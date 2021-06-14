@@ -9,7 +9,7 @@ export const paletteColorsDark = {
 };
 
 export const paletteColorsLight = {
-    primary: "#6886c5",
+    primary: "#480ca8",
     secondary: "#ffe0ac",
     error: "#E44C65",
     background: "#f9f9f9",

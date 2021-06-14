@@ -1,20 +1,22 @@
-import { Box, Button, Container, Typography } from "@material-ui/core";
+import Head from "next/head";
 import React from "react";
-import CopyRight from "../components/CopyRight";
-import homeStyle from "../styles/Home.module.css";
+import Layout from "../components/Layout";
+import Link from "next/link";
+import { Typography } from "@material-ui/core";
 
 export default function Home() {
     return (
-        <Container maxWidth="sm" className={homeStyle.container}>
-            <Box my={4}>
-                <Typography variant="h4" component="h1" gutterBottom>
-                    Ninja app
-                </Typography>
-                <Button variant="contained" color="primary">
-                    Hello World
-                </Button>
-            </Box>
-            <CopyRight />
-        </Container>
+        <Layout>
+            <Head>
+                <title>Home</title>
+            </Head>
+
+            <Typography variant="h5" component="h5">
+                Ninja app page
+            </Typography>
+            <Link href="/products/new">
+                <a>New products</a>
+            </Link>
+        </Layout>
     );
 }
