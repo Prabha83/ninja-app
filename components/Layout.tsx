@@ -47,7 +47,7 @@ export default function Layout({ children }: Props) {
                     <Button color="inherit">Login</Button>
                 </Toolbar>
             </AppBar>
-            <Container maxWidth="sm" className={styles.main}>
+            <Container maxWidth="md" className={styles.main}>
                 <div className={classes.main}>{children}</div>
             </Container>
             <div className={styles.footer}>
